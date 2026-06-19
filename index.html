@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!-- Informa que o documento usa HTML5 -->
+<html lang="pt-BR"> <!-- Início do HTML com idioma português do Brasil -->
+<head> <!-- Área de configuração da página -->
+    <meta charset="UTF-8"> <!-- Permite usar acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página para celular -->
+    <title>GERADOR DE SENHAS</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Liga o HTML ao arquivo CSS -->
+</head>
+<body> <!-- Área visível da página -->
+    <main class="caixa">
+        <h1>GERADOR DE SENHA AUTOMATICO</h1>
+        <input type="text" placeholder="Senha gerada" readyonly>
+        <label for="quantidade"> Quantidade de Caracteres: </label>
+        </input type="number" id="quantidade" value="8" min="1">
+        <label>
+            <input type="cehckbox" id="minusculas" checked>
+            LETRAS MINUSCULAS
+        </label>
+             <label>
+            <input type="cehckbox" id="maiusculas">
+            LETRAS MAIUSCULAS
+             </label>
+             <label>
+            <input type="cehckbox" id="numeros">
+            LETRAS NUMEROS
+        </label>
+         </label>
+             <label>
+            <input type="cehckbox" id="especiais">
+            CARACTERES ESPECIAIS
+            <label>
+                <button onclick="criarSenha()">CRIAR SENHA</button>
+                <button onclick="limparSenha()">LIMPAR</button>
+    </main>
+    <script src="script.js"
+</body>
+</html>
